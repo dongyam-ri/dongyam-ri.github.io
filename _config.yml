@@ -7,10 +7,12 @@ logo: apple-touch-icon-precomposed.png
 teaser: apple-touch-icon-precomposed.png
 # 400x250 px default teaser image used in image archive grid
 locale: en
-url: https://dongyam-ri.github.io/
+url: https://dongyam-ri.github.io
 feed:
   path: atom.xml
-comments: true
+
+# comments: true
+
 # Jekyll configuration
 
 sass:
