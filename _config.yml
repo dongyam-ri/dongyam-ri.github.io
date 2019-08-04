@@ -10,7 +10,7 @@ locale: en
 url: https://dongyam-ri.github.io/
 feed:
   path: atom.xml
-
+comments: true
 # Jekyll configuration
 
 sass:
