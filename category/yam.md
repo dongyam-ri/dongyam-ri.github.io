@@ -2,6 +2,6 @@
 
 layout: category
 
-title: "Secu-Yam"
+title: "secu-yam"
 
 ---
