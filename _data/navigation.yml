@@ -1,6 +1,11 @@
 # Site navigation links
 
-- title: "동"
-  url:
+- title: "시큐얌"
+  url: https://dongyam-ri.github.io/category/yam/
+  excerpt:
+  image:
+
+- title: "데브동"
+  url: https://dongyam-ri.github.io/category/dong/
   excerpt:
   image:
