@@ -2,12 +2,11 @@
 layout: archive
 ---
   <div class="tiles">
-  
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-	  {% include post-grid.html %}
-  {% endfor %}
-
+    {% assign category = page.category | default: page.title %}
+    {% for post in site.categories[category] %}
+      {% include post-grid.html %}
+    {% endfor %}
+  </div><!-- /.tiles -->
 <!--     <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
@@ -16,6 +15,5 @@ layout: archive
         <small>{{ post.date | date_to_string }}</small>
       </h3>
     </li> -->
-  {% endfor %}
   
-</div><!-- /.tiles -->
+
