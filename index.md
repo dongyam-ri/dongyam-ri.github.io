@@ -1,21 +1,18 @@
----
+--
 layout: archive
 permalink: /
 title: "Latest Posts"
 ---
 
-<header class="site-category">
-  <ul>
+ <div class="tiles">
+   {% assign pages_list = site.pages %}
+    {% for page in pages_list %}
     
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "category" %}
-          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-        {% endif %}
+    {% assign category = page.category | default: page.title %}
+    {% for post in site.categories[category] %}
+      {% include post-grid.html %}
+    {% endfor %}
+  
       {% endif %}
     {% endfor %}
-    
-</ul>
-</header>
+    </div>
