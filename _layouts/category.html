@@ -1,14 +1,12 @@
 ---
-layout: default
+layout: archive
 ---
   <div class="tiles">
   
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-
-{% for post in site.posts %}
-	{% include post-grid.html %}
-{% endfor %}
+	  {% include post-grid.html %}
+  {% endfor %}
 
 <!--     <li>
       <h3>
