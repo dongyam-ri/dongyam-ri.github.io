@@ -4,13 +4,18 @@ permalink: /
 title: "Latest Posts"
 ---
 
-<div class="tiles">
-  {% assign pages_list = site.pages %}
-  {% for page in pages_list %}
-    {% assign category = page.category | default: page.title %}
-      {% for post in site.categories[category] %}
-        {% include post-grid.html %}
-      {% endfor %}
+<header class="site-category">
+  <ul>
+
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
       {% endif %}
-  {% endfor %}
-</div>
+    {% endfor %}
+
+</ul>
+</header>
