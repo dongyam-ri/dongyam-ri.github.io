@@ -7,3 +7,4 @@ categories: "Secu-Yam"
 ---
 
 얌의 첫번째 포스트 입니다.
+![ex_screenshot](./img/test.png)
