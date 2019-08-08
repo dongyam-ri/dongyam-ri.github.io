@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /
-title: "Latest Posts"
+title: "Category"
 ---
 
 <header class="site-category">
@@ -11,8 +11,10 @@ title: "Latest Posts"
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "category" %}
+          <H3>
           <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
           href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+          </H3>
         {% endif %}
       {% endif %}
     {% endfor %}
