@@ -4,6 +4,7 @@ title: "Git"
 date: 2019-08-04 13:30:00 -0400
 categories: "Dev-Dong"
 ---
+
 # Rebase와 Merge의 차이
   - Rebase : 리베이스 하는쪽으로 모든 변경사항을 이동
     --결과 하나의 브랜치만 남음
@@ -35,3 +36,4 @@ categories: "Dev-Dong"
 # 참고 URL
 - https://backlog.com/git-tutorial/kr/stepup/stepup2_8.html
 - https://git-scm.com/book/ko/v1/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase%ED%95%98%EA%B8%B0
+- https://learngitbranching.js.org/?locale=ko
