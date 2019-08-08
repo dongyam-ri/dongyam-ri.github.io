@@ -14,8 +14,7 @@ title: "Category"
           <H3>
           <li style="padding: 5px 0px 5px 5px;
                      margin-bottom: 5px;
-                     border-bottom: 1px solid #efefef;
-                     font-size: 12px;">
+                     font-size: 30px;">
             <a class="category-link {% if page.url == node.url %} active{% endif %}"
             href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
           </H3>
