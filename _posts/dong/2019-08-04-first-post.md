@@ -2,7 +2,7 @@
 layout: article
 title: "Git"
 date: 2019-08-04 13:30:00 -0400
-categories: "Dev-Dong"
+categories: "dev-dong"
 ---
 # Git Command \#1
    1. 브랜치 생성
