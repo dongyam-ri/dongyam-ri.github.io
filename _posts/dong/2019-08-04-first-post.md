@@ -7,22 +7,22 @@ categories: "dev-dong"
 ----------------------------------------
 # Git Command \#1
    1. 브랜치 생성
-  <PRE><CODE>
-  git branch testB
-  git checkout testB    
-  </CODE></PRE>
+<PRE><CODE>
+git branch testB
+git checkout testB
+</CODE></PRE>
    2. Merge(현재 브랜치에서 testB 를 merge 함)
-      <PRE><CODE>
-      git merge testB 
-  </CODE></PRE>
-   3. Rebase(testB 브랜치에서 master브랜치로 rebase)
-      <PRE><CODE>
-      git checkout testB
-      git rebase master
-      git checkout master
-      git rebase testBranch
-      # master 브랜치는 Fast forward 됨 
-  </CODE></PRE>
+<PRE><CODE>
+git merge testB
+</CODE></PRE>
+  3. Rebase(testB 브랜치에서 master브랜치로 rebase)
+<PRE><CODE>
+git checkout testB
+git rebase master
+git checkout master
+git rebase testBranch
+# master 브랜치는 Fast forward 됨 
+</CODE></PRE>
 # Rebase와 Merge의 차이
   - Rebase : 리베이스 하는쪽으로 모든 변경사항을 이동
     --결과 하나의 브랜치만 남음
